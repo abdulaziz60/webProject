@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page - Saudi Clothes Company</title>
+    <style>
+		body {
+			background-color: #333;
+			color: #fff;
+			font-family: Arial, sans-serif;
+		}
+
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+		}
+
+		.title {
+			font-size: 36px;
+			margin-bottom: 20px;
+			text-align: center;
+		}
+
+		.subtitle {
+			font-size: 18px;
+			margin-bottom: 20px;
+			text-align: center;
+		}
+
+		.btn {
+			padding: 10px 20px;
+			border: none;
+			background-color: rgb(111, 202, 255);
+			color: #fff;
+			border-radius: 5px;
+			margin: 5px;
+			font-size: 18px;
+			cursor: pointer;
+		}
+		.button:hover {
+            background-color: rgb(188, 230, 255);
+        }
+	</style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Tech Gadgets</h1>
+        <img src="Logo.png" alt="Logo" style="width: 150px; height: auto;">
+		<h2 class="subtitle">All your digital needs, delivered!</h2>
+        <button class="btn" onclick="window.location.href='Login.html';">Login</button>
+        <button class="btn" onclick="window.location.href='Register.html';">Register</button>
+        <button class="btn" onclick="window.location.href = 'About.html';">About</button>
+
+        <!-- Admin Login Button -->
+        <button class="btn" onclick="window.location.href='AdminLogin.html';">Admin Panel</button>
+    </div>
+</body>
+</html>

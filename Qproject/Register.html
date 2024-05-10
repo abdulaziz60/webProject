@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>register Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #222;
+            color: #fff;
+        }
+
+        .container {
+            background-color: #333;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            margin: 100px auto;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            background-color: #444;
+            color: #fff;
+        }
+
+        .button {
+            background-color: rgb(111, 202, 255);
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 14px;
+        }
+
+        .button:hover {
+            background-color: rgb(188, 230, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Register</h2>
+        <form method="post" action="register.php">
+            <label for="uname">Name</label>
+            <input type="text" id="Name" name="uname" required pattern=^[a-zA-Z]+$>
+
+            <label for="uemail">Email</label>
+            <input type="text" id="email" name="uemail" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,63}">
+            <label for="upassword">Password</label>
+          <input type="password" id="password" name="upassword" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+])[a-zA-Z0-9!@#$%^&*()_+]{8,}$">
+             
+
+            <label for="phone">phone</label>
+            <input type="tel" id="phone" name="phone" required pattern=^(009665|9665|\+9665|05|5)(5|0|3|6|4|9|1|8|7)([0-9]{7})$>
+
+            <input type="submit" class="button" name="register" value="register">
+            <br>
+            <button class="button" onclick="window.location.href = 'Home.html';">Home</button>
+        </form>
+    </div>
+</body>
+
+</html>
